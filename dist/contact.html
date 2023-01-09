@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+ <!-- --- CSS FILE--- -->
+
+    <link rel="stylesheet" href="/contact.45d35a99.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- --- CSS FILE END --- -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+
+ </head>
+ <body>
+    <!-- --- MAIN CONTAINER START --- -->
+    <div class="main-container">
+
+
+        <!-- ---ASIDE START--- -->
+    
+     <div class="aside">
+        <div class="logo">
+            <a href="/index.html"><span>D</span>ipesh Shrestha</a>
+        </div>
+        <div class="nav-toogler">
+            <span></span>
+        </div>
+        <ul class="nav">
+            <li><a href="/index.html" class="active"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="/About.html"><i class="fa fa-user"></i>About</a></li>
+            <li><a href="/Service.html"><i class="fa fa-list"></i>Services</a></li>
+            <li><a href="/Portfolio.html"><i class="fa fa-briefcase"></i>portfolio</a></li>
+            <li><a href="/contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+    
+        </ul>
+        
+    
+    </div>
+    <!-- Aside End -->
+    
+    
+    
+    
+    <!-- Home section start -->
+    
+    <div class="home section">
+    
+    <!-- Container Start -->
+    
+    
+    <div class="container">
+    
+
+        <div class="row">
+
+        
+
+                <div class="contact-title">
+                    <h1>Contact Me</h1>
+                </div>
+                <div class="contact-item-container">
+                    <div class="contact-item">
+                <div class="contact-sub-title">
+                    Have You Any Questions?
+                </div>
+                <h4 class="contact-sub-title-2">
+                    I'M AT YOUR SERVICES
+                </h4>
+
+
+                    </div>
+                    <div class="contact-info-container">
+                <div class="contact-info-item">
+                    <div class="icon">
+                        <i class=" fa fa-phone"></i>
+                    </div>
+                    <h4>Call Us On</h4>
+                    <p>+91-8595431821</p>
+                </div>
+
+
+
+                <div class="contact-info-item">
+                    <div class="icon">
+                        <i class="fa fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Office</h4>
+                    <p>New Delhi</p>
+                </div>
+
+
+                <div class="contact-info-item">
+                    <div class="icon">
+                        <i class=" fa fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>Dipeshshrestha876@gmail.com</p>
+                </div>
+
+
+                <div class="contact-info-item">
+                    <div class="icon">
+                        <i class=" fa fa-globe-europe"></i>
+                    </div>
+                    <h4>Website</h4>
+                    <p>www.domain.com</p>
+                </div>
+ 
+                </div>
+                <div class="contact-item">
+                    <div class="contact-sub-title">
+                        SEND ME AND EMAIL
+                    </div>
+                    <h4 class="contact-sub-title-2">
+                        I'M VERY RESPONSIVE TO MESSAGES
+                    </h4>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <form id="Contact-form">
+        <div class="contact-inputs">
+            <input class="form-control" type="text" placeholder="Name" id="Full_Name">
+            <input class="form-control" type="text" placeholder="Email" id="Email">
+        </div>
+        <input class="form-control" type="tel" placeholder="Contact Number" id="Contact">
+        <textarea type="checkbox" class="form-control" placeholder="Message" id="Message"></textarea>
+        <div class="btn">
+        <button type="submit" class="btn hire me" id="Submit">Send Email</button>
+        </div> 
+</form> 
+
+</div>  
+    
+
+
+</div>
+    
+</div>    
+
+
+
+<script>const name = document.getElementById("Full_Name");
+const email = document.getElementById("Email");
+const contact = document.getElementById("Contact");
+const message = document.getElementById("Message");
+const submit = document.getElementById("Contact-form");
+submit.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    console.log("Clicked :");
+    // format to be sent in mail
+    let ebody = `
+            <b>Name: </b>${name.value}
+            <br>
+            <b>Email: </b>${email.value}
+            <br>
+            <b>Phone no: </b>${contact.value}
+            <br>
+            <b>Message: </b>${message.value}
+`;
+    // Email code
+    Email.send({
+        SecureToken: "2fc1686b-5b9e-4862-92d1-044c1d2ff82a",
+        To: "dipeshshrestha876@gmail.com",
+        From: "dipeshshrestha876@gmail.com",
+        Subject: email.value,
+        Body: ebody
+    }).then((message)=>alert(message));
+});
+submit.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    reset();
+});
+
+</script>
+ </div><script src="/contact.3fd1470c.js"></script></body>
+</html>

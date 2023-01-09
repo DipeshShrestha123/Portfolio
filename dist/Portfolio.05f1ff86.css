@@ -1,0 +1,246 @@
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap";
+:root {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+  --skin-color: #ec1839;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins" sans-serif;
+  background: #000000e3;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:after, :before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.pad-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: 300px;
+  position: absolute;
+  top: -6rem;
+}
+
+.row {
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  margin-right: 4rem;
+  display: flex;
+  position: relative;
+}
+
+.shadow-dark {
+  box-shadow: 0 0 20px #e9e8ed96;
+}
+
+.section {
+  z-index: 0;
+  opacity: 1;
+  padding: 0;
+  right: 0;
+}
+
+.pad-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.aside {
+  width: 230px;
+  background: var(--bg-black-900);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  flex-direction: column;
+  position: fixed;
+}
+
+.aside .logo {
+  text-transform: capitalize;
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+}
+
+.aside .logo a {
+  color: var(--text-black-900);
+  letter-spacing: 5px;
+  padding: 12px 13px;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 700;
+  position: relative;
+}
+
+.aside .logo a span {
+  font-family: Clicker Script, cursive;
+}
+
+.aside .logo a:before {
+  content: "";
+  width: 20px;
+  min-height: 20px;
+  border-top: 4px solid var(--skin-color);
+  border-left: 4px solid var(--skin-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.aside .logo a:after {
+  content: "";
+  width: 20px;
+  min-height: 20px;
+  border-bottom: 4px solid var(--skin-color);
+  border-right: 4px solid var(--skin-color);
+  position: absolute;
+  bottom: 1px;
+  right: -.1rem;
+}
+
+.aside .nav-toogler {
+  height: 40px;
+  min-width: 45px;
+  border: 1px solid var(--bg-black-50);
+  cursor: pointer;
+  background: var(--bg-black-100);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 300px;
+}
+
+.aside .nav-toogler span {
+  height: 2px;
+  width: 18px;
+  background: var(--skin-color);
+  display: inline-block;
+  position: relative;
+}
+
+.aside .nav-toogler span:before {
+  content: "";
+  min-height: 2px;
+  width: 18px;
+  background: var(--skin-color);
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+.aside .nav-toogler span:after {
+  content: "";
+  min-height: 2px;
+  min-width: 18px;
+  background: var(--skin-color);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.aside .nav li {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.aside .nav li a {
+  border-bottom: 1px solid var(--bg-black-50);
+  color: var(--text-black-900);
+  padding: 5px 15px;
+  font-size: 25px;
+  font-weight: 400;
+  display: block;
+}
+
+.aside .nav li a.active {
+  color: var(--skin-color);
+}
+
+.aside .nav li a i {
+  margin-right: 10px;
+}
+
+.portfolio-title {
+  color: var(--bg-black-100);
+  margin-top: 10rem;
+}
+
+.portfolio-title:after {
+  content: "";
+  height: 4px;
+  width: 80px;
+  background-color: var(--skin-color);
+  position: absolute;
+  left: 0;
+}
+
+.portfolio-title:before {
+  content: "";
+  height: 4px;
+  width: 60px;
+  background-color: var(--skin-color);
+  position: absolute;
+  top: 13.7rem;
+  left: 0;
+}
+
+.portfolio-heading {
+  color: var(--bg-black-100);
+  margin: 4rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.portfolio-item-container {
+  min-width: 1200px;
+  flex-wrap: wrap;
+  gap: 3rem;
+  display: flex;
+}
+
+.portfolio-item {
+  cursor: pointer;
+  border: 6px solid #0000;
+  border-radius: 10px;
+  flex: 0 0 30%;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.portfolio-img img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=Portfolio.05f1ff86.css.map */
