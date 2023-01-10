@@ -503,6 +503,7 @@ h3.my-profession{
 }
 .bar{
     font-size:1.5rem;
+    display: none;
 }
 .lang{
     font-size:1.7rem; 
@@ -514,10 +515,11 @@ h3.my-profession{
     display: block;
 }
 .btn{
-    width: 200px;
+    width: 100px;
     font-size: 1.4rem; 
 }
 .download-resume{
+    width: 400px;
     margin-top: 4rem;
 }
 
@@ -745,73 +747,141 @@ h3.my-profession{
     top: 30rem;
     line-height: 150px;    
 }
-.aside{
-    width: 500px;
-    z-index: 1;
-    transform: translateX(-502px);
 
-}
-.slider{
-    position: absolute !important;
-    left: 500px !important;
-}
 .nav-toogler {
     font-size: 4rem;
 }
+}
+
+
+
+
+
+
+@media (max-width:430px){
     
-    
+.nav-toogler {
+    font-size: 1.5rem;
+}
+.about-head{
+    font-size:1.5rem;
+}
+.section-title h1::before{
+    top: 1.8rem;
+    width: 50px;
 
 }
 
-@media (max-width:400px){
-    .bar{
-        font-size:3rem;
-    }
-    .lang{
-        font-size:3.5rem; 
-    }
-    .info-item{
-        font-size: 3.8rem;
-        font-weight: 100;
-        width: 120%;
-    }
-    .timeline{   
-        font-size: 3.5rem;
-    }
-    .timeline-date{
-        font-size: 2.5rem;
-    }
-    .timeline-title{
-        font-size:3.3rem;   
-    }
-    .education-title,.exp-title{
-        font-size: 4rem;
-    }
-    .timeline-item::before{
-        width: 5px;
-    }
-    .circle-dot-1{
-        left: 10px;
-        top: 35px;
-        width: 25px;
-        height: 25px;        
-    }
-    .circle-dot-2{
-        left: 10px;
-        top: 35rem;
-        width: 25px;
-        height: 25px;  
-   }
-    .circle-dot-3{
-        left: 10px;
-        top: 67.8rem;
-        width: 25px;
-        height: 25px;        
-    }
-    .nav-toogler {
-        font-size: 5rem;
-    }
-    .aside .nav li a {
-        font-size: 4rem;
-    }
+.section-title h1::after{
+    top: 2.3rem;
+    width: 90px;
+    
+}
+.about-info{
+        font-size:1.5rem;
+}
+.about-me{
+    width: 380px;
+    font-size: 1.5rem;
+}
+.info-item{
+    width: 350px;
+    font-size: 1rem;
+    font-weight: 100;
+    /* width: 120%; */
+}
+.lang{
+    font-size:1rem; 
+}
+.bg{
+    width: 350px;
+}
+.bar{
+    /* margin-right: 0rem; */
+    font-size:1rem;
+    text-align: center;
+}
+.info-item{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.506);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.btn{
+    width: 100px;
+    font-size: 1rem; 
+}
+.download-resume{
+    margin-top: 4rem;
+}
+.education-title{
+    font-size: 2rem;
+}
+.timeline-container{
+    width: 350px;
+}
+.timeline-date{
+    font-size: 0.8rem;
+}
+.timeline-title{
+    font-size: 1rem;
+}
+.timeline{   
+    font-size: 1rem;
+}
+
+.education-title{
+    font-size: 2rem;
+}
+.timeline-item::before{
+    width: 4px;
+}
+.circle-dot-1{
+    left: 12px;
+    top: 35px;
+    width: 20px;
+    height: 20px;        
+}
+.circle-dot-2{
+    left: 12px;
+    top: 15rem;
+    width: 20px;
+    height: 20px; 
+}
+.circle-dot-3{
+    left: 12px;
+    top: 28rem;
+    width: 20px;
+    height: 20px;        
+}
+   
+.aside{
+    z-index: 1;
+}
+/* .nav-toogler{
+
+} */
+.main-container{
+    width: 400px;
+}
+.container{
+    margin-left:14px;
+    width: 360px;
+}
+.aside .logo a{
+    font-weight: 700;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+}
+
+.aside .nav li a {
+    font-size: 1.5rem;
+    font-weight: 100;
+    border-bottom: 2px solid var(--bg-black-50);
+
+}
+.nav{
+    top: 10rem;
+    line-height: 2px;    
+}
+
 }
