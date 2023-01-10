@@ -124,10 +124,10 @@
 
                     const activePage = window.location.pathname;
                     const navLinks = document.querySelectorAll('ul a').forEach(link =>{
-                        if(link.href.includes(`${activePage}`) && activePage != `/HTML/`){
+                        if(link.href.includes(`${activePage}`) && activePage != `/portfolio/`){
                             link.classList.add('active');
                         }
-                        if(activePage == `/HTML/`){
+                        if(activePage == `/portfolio/`){
                             homePage.classList.add('active');
                         }
                     })
