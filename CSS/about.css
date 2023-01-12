@@ -90,6 +90,7 @@ ul{
     top: 0;
     padding: 10px;
     height: 100%;
+    z-index: 1;
     justify-content: center;
     align-items: center;
 }
@@ -381,7 +382,7 @@ ul{
     content: '';
     width: 2px;
     position: absolute;
-    height: 92%;
+    height: 80%;
     top: 40px;
     left: 20px;
     background-color: var(--skin-color);
@@ -398,7 +399,7 @@ ul{
 .circle-dot-2{
     position: absolute;
     left: 14px;
-    top: 15.5rem;
+    top: 12rem;
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -407,7 +408,7 @@ ul{
 .circle-dot-3{
     position: absolute;
     left: 14px;
-    top: 28.9rem;
+    top: 22rem;
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -503,7 +504,6 @@ h3.my-profession{
 }
 .bar{
     font-size:1.5rem;
-    display: none;
 }
 .lang{
     font-size:1.7rem; 
@@ -515,11 +515,10 @@ h3.my-profession{
     display: block;
 }
 .btn{
-    width: 100px;
     font-size: 1.4rem; 
 }
 .download-resume{
-    width: 400px;
+    width: 50%;
     margin-top: 4rem;
 }
 
@@ -539,8 +538,10 @@ h3.my-profession{
         top: 5.5rem;
         width: 90px;
     }
+    .download-resume{
+        width: 60%;
+    }
     .btn{
-        width: 200px;
         font-size: 2rem; 
     }
     .about-info{
@@ -622,7 +623,7 @@ h3.my-profession{
     top: 21.1rem;
 }
 .circle-dot-3{
-    top: 39.6rem;
+    top: 10rem;
 }
 .aside .logo a{
     font-weight: 700;
@@ -683,8 +684,8 @@ h3.my-profession{
         font-size:4rem;
     }
     .bar{
-        margin-right: 3rem;
         font-size:2rem;
+        left: 20rem;
     }
     .lang{
         font-size:2.5rem; 
@@ -758,130 +759,208 @@ h3.my-profession{
 
 
 
-@media (max-width:430px){
+@media (max-width:450px){
+
+    .nav-toogler {
+        position: relative;
+        top: 33px;
+        font-size: 1.8rem;
+    }
+
+    .section-title h1::before{
+        top: 2.5rem;
+        height: 4px;
+        width: 40px;
     
-.nav-toogler {
-    font-size: 1.5rem;
-}
-.about-head{
-    font-size:1.5rem;
-}
-.section-title h1::before{
-    top: 1.8rem;
-    width: 50px;
-
-}
-
-.section-title h1::after{
-    top: 2.3rem;
-    width: 90px;
+    }
     
-}
-.about-info{
-        font-size:1.5rem;
-}
-.about-me{
-    width: 380px;
-    font-size: 1.5rem;
-}
-.info-item{
-    width: 350px;
-    font-size: 1rem;
-    font-weight: 100;
-    /* width: 120%; */
-}
-.lang{
-    font-size:1rem; 
-}
-.bg{
-    width: 350px;
-}
-.bar{
-    /* margin-right: 0rem; */
-    font-size:1rem;
-    text-align: center;
-}
-.info-item{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.506);
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-.btn{
-    width: 100px;
-    font-size: 1rem; 
-}
-.download-resume{
-    margin-top: 4rem;
-}
-.education-title{
-    font-size: 2rem;
-}
-.timeline-container{
-    width: 350px;
-}
-.timeline-date{
-    font-size: 0.8rem;
-}
-.timeline-title{
-    font-size: 1rem;
-}
-.timeline{   
-    font-size: 1rem;
+    .section-title h1::after{
+        height: 4px;
+        top: 2rem;
+        width: 80px;
+        
+    }
+    .about-head{
+        font-size: 1.5rem;
+    }
+    .about-info{
+            font-size:1.5rem;
+    }
+    .about-me{
+        width: 130%;
+        font-size: 1rem;
+    }
+    .info-item{
+        width: 105%;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .lang{
+        font-size:1rem; 
+    }
+    .bg{
+        width:120%;
+    }
+    .bar{
+        left: 20rem;
+        font-size:1rem;
+        right: 0;
+    }
+    .skills{
+        line-height: 3rem;
+    }
+    #download{
+        margin: 10px 10px 0 0px;
+    }
+    .info-item{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.506);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 120%;
+    }
+    .download-resume a{
+        font-size: 15px;
+    }
+    .download-resume{
+        margin-top: 4rem;
+        width:400px;
+    }
+    .education-title{
+        font-size: 2rem;
+    }
+    .timeline-container{
+        width: 350px;
+    }
+    .timeline-date{
+        font-size: 0.8rem;
+    }
+    .timeline-title{
+        font-size: 0.9rem;
+    }
+    .timeline{   
+        font-size: 1rem;
+        width: 105%;
+    }
+    
+    .education-title{
+        font-size: 2rem;
+    }
+    .exp-title{
+        font-size: 2rem;
+    }
+    .timeline-item::before{
+        width: 4px;
+    }
+    .circle-dot-1{
+        left: 17px;
+        top: 33px;
+        width: 10px;
+        height: 10px;        
+    }
+    .circle-dot-2{
+        left: 17px;
+        top: 10.7rem;
+        width: 10px;
+        height: 10px; 
+    }
+    .circle-dot-3{
+        left: 17px;
+        top: 19.2rem;
+        width: 10px;
+        height: 10px;        
+    }
+       
+    .aside{
+        z-index: 1;
+        width: 250px;
+        transform: translateX(-272px);
+    }
+    .main-container{
+        width: 400px;
+    }
+    .container{
+        margin-left:14px;
+        width: 360px;
+    }
+    .aside .logo a{
+        font-weight: 700;
+        padding: 10px 10px;
+        font-size:14px;
+    }
+    
+    .aside .nav li a {
+        font-size: 1.5rem;
+        font-weight: 100;
+        border-bottom: 2px solid var(--bg-black-50);
+    
+    }
+    .nav{
+        top: 14em;
+        line-height: 2rem;    
+    }
+    .show_aside{
+        transform: translateX(0px) !important;
+    }
+    .slider{
+        position: absolute !important;
+        left: 250px !important;
+    }
+    .not-slider{
+        position: absolute !important;
+        left: 0px !important;
+    }
+    
+
 }
 
-.education-title{
-    font-size: 2rem;
+@media (max-width:395px){
+    .about-me {
+        width: 100%;
+    }    
+    .home-info p{
+        width: 100%;
+    }
+    .about-me{
+        width: 360px;
+    }
+    .info-item{
+        width: 120%;
+    }
+    .bg{
+        width: 120%;
+    }
+    .timeline{
+        width: 100%;
+    }
 }
-.timeline-item::before{
-    width: 4px;
-}
-.circle-dot-1{
-    left: 12px;
-    top: 35px;
-    width: 20px;
-    height: 20px;        
-}
-.circle-dot-2{
-    left: 12px;
-    top: 15rem;
-    width: 20px;
-    height: 20px; 
-}
-.circle-dot-3{
-    left: 12px;
-    top: 28rem;
-    width: 20px;
-    height: 20px;        
-}
+@media (max-width:361px){
+    .home-info p{
+        width: 90%;
+    }
+    .about-me{
+        width: 330px;
+    }
+    .info-item{
+        width: 110%;
+    }
+    .bg{
+        width: 110%;
+    }
+    .timeline{
+        width: 90%;
+    }
+    .bar{
+        right: 0;
+        left: 18.5rem;
+    }
+    .container{
+        width: 355px;
+    }
+    .home{
+        max-width: 300px;
+    }
+    .main-container{
+        max-width: 200px;
+    }
    
-.aside{
-    z-index: 1;
-}
-/* .nav-toogler{
-
-} */
-.main-container{
-    width: 400px;
-}
-.container{
-    margin-left:14px;
-    width: 360px;
-}
-.aside .logo a{
-    font-weight: 700;
-    padding: 10px 10px;
-    font-size: 1.5rem;
-}
-
-.aside .nav li a {
-    font-size: 1.5rem;
-    font-weight: 100;
-    border-bottom: 2px solid var(--bg-black-50);
-
-}
-.nav{
-    top: 10rem;
-    line-height: 2px;    
-}
-
 }
