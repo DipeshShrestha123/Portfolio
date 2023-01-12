@@ -969,6 +969,7 @@ h3.my-profession{
     .bar{
         left: 20rem;
         font-size:1rem;
+        right:0;
     }
     .skills{
     line-height: 3rem;
@@ -998,7 +999,7 @@ h3.my-profession{
         font-size: 0.8rem;
     }
     .timeline-title{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .timeline{   
         font-size: 1rem;
