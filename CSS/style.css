@@ -452,7 +452,7 @@ h3.my-profession{
     content: '';
     width: 2px;
     position: absolute;
-    height: 92%;
+    height: 80%;
     top: 40px;
     left: 20px;
     background-color: var(--skin-color);
@@ -935,7 +935,7 @@ h3.my-profession{
         font-size:1.5rem;
     }
     .section-title h1::before{
-        top: 35.3rem;
+        top: 35.4rem;
         height: 4px;
         width: 50px;
     
@@ -943,7 +943,7 @@ h3.my-profession{
     
     .section-title h1::after{
         height: 4px;
-        top: 34.8rem;
+        top: 34.9rem;
         width: 90px;
         
     }
