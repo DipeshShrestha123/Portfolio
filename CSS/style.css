@@ -66,6 +66,7 @@ ul{
     display: flex;
     padding: 10px;
     height: 100%;
+    z-index: 1;
     justify-content: center;
     transition: 0.7s ease;
 }
@@ -199,6 +200,10 @@ ul{
 }
 h3.hello{
     font-size: 30px;
+    
+}
+.hello{
+    display: inline;
 }
 .naam{
     font-size: 30px;
@@ -213,7 +218,7 @@ h3.my-profession{
     color:var(--skin-color);
 }
 .home-info p{
-    min-width:700px;
+    width:700px;
     margin-bottom: 70px;
     font-size: 25px;
     color:var(--bg-black-900);
@@ -464,7 +469,7 @@ h3.my-profession{
 .circle-dot-2{
     position: absolute;
     left: 14px;
-    top: 15.5rem;
+    top: 12rem;
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -473,7 +478,7 @@ h3.my-profession{
 .circle-dot-3{
     position: absolute;
     left: 14px;
-    top: 28.9rem;
+    top: 22rem;
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -639,9 +644,6 @@ h3.my-profession{
     .home-img{
         display: none;
     }
-    .home-info p{
-        min-width: 70rem;
-    }
     .section-title h1::before{
         top: 65.7rem;
         width: 130px;
@@ -663,6 +665,7 @@ h3.my-profession{
         font-size: 3rem;
     }
     .home-info p{
+        width: 120%;
         font-size: 2.5rem;
     }
     
@@ -746,10 +749,10 @@ h3.my-profession{
     
 }
 .circle-dot-2{
-    top: 21.1rem;
+    top: 14.8rem;
 }
 .circle-dot-3{
-    top: 39.6rem;
+    top: 26.5rem;
 }
 
 .aside .logo a{
@@ -849,13 +852,13 @@ h3.my-profession{
     }
     .circle-dot-2{
         left: 12px;
-        top: 30.5rem;
+        top: 21.5rem;
         width: 20px;
         height: 20px; 
    }
     .circle-dot-3{
         left: 12px;
-        top: 58.7rem;
+        top: 40.5rem;
         width: 20px;
         height: 20px;        
     }
@@ -891,55 +894,247 @@ h3.my-profession{
 }
 }
 
-@media (max-width:400px){
-    .bar{
-        font-size:3rem;
+
+@media (max-width:420px){
+
+    .nav-toogler {
+        top: 13px;
+        font-size: 1.8rem;
     }
-    .lang{
-        font-size:3.5rem; 
+    .home-info h3{
+        max-width: 360px;
+        font-size: 2rem;
+    }
+    .naam{
+        font-size: 2rem;
+        max-width: 360px;
+
+    }
+    .hello{
+        display: block;
+        max-width: 360px;
+        margin-right: 0px;
+    }
+    .my-profession{
+        width: 360px;
+    }
+    
+    .home-info p{
+        font-size: 1rem;
+        width: 110%;
+        flex-wrap: wrap;
+    }
+    .btn{
+        padding: 5px 20px;
+        font-size: 10px;
+    }
+    .about-head{
+        margin-top: 3rem;
+        font-size:1.5rem;
+    }
+    .section-title h1::before{
+        top: 36.3rem;
+        height: 4px;
+        width: 50px;
+    
+    }
+    
+    .section-title h1::after{
+        height: 4px;
+        top: 35.8rem;
+        width: 90px;
+        
+    }
+    .about-info{
+            font-size:1.5rem;
+    }
+    .about-me{
+        width: 130%;
+        font-size: 1rem;
     }
     .info-item{
-        font-size: 3.8rem;
+        width: 105%;
+        font-size: 1rem;
         font-weight: 100;
+        /* width: 120%; */
+    }
+    .lang{
+        font-size:1rem; 
+    }
+    .bg{
+        width:120%;
+    }
+    .bar{
+        font-size:1rem;
+        text-align: center;
+        display: none;
+    }
+    #download{
+        margin: 10px 10px 0 0px;
+    }
+    .info-item{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.506);
+        padding-bottom: 5px;
+        padding-top: 5px;
         width: 120%;
     }
-    .timeline{   
-        font-size: 3.5rem;
+    .btn{
+        width: 100px;
+        font-size: 1rem; 
+    }
+    .download-resume{
+        margin-top: 4rem;
+        width: 300px;
+    }
+    .education-title{
+        font-size: 2rem;
+    }
+    .timeline-container{
+        width: 350px;
     }
     .timeline-date{
-        font-size: 2.5rem;
+        font-size: 0.8rem;
     }
     .timeline-title{
-        font-size:3.3rem;   
+        font-size: 1rem;
     }
-    .education-title,.exp-title{
-        font-size: 4rem;
+    .timeline{   
+        font-size: 1rem;
+        width: 105%;
+    }
+    
+    .education-title{
+        font-size: 2rem;
+    }
+    .exp-title{
+        font-size: 2rem;
     }
     .timeline-item::before{
-        width: 5px;
+        width: 4px;
     }
     .circle-dot-1{
-        left: 10px;
-        top: 35px;
-        width: 25px;
-        height: 25px;        
+        left: 17px;
+        top: 33px;
+        width: 10px;
+        height: 10px;        
     }
     .circle-dot-2{
-        left: 10px;
-        top: 35rem;
-        width: 25px;
-        height: 25px;  
-   }
-    .circle-dot-3{
-        left: 10px;
-        top: 67.8rem;
-        width: 25px;
-        height: 25px;        
-    }.nav-toogler {
-        font-size: 5rem;
+        left: 17px;
+        top: 10.7rem;
+        width: 10px;
+        height: 10px; 
     }
-    .aside .nav li a {
-        font-size: 4rem;
+    .circle-dot-3{
+        left: 17px;
+        top: 19.2rem;
+        width: 10px;
+        height: 10px;        
     }
        
+    .aside{
+        z-index: 1;
+        width: 200px;
+        transform: translateX(-272px);
+    }
+    .main-container{
+        width: 400px;
+    }
+    .container{
+        margin-left:14px;
+        width: 360px;
+    }
+    .aside .logo a{
+        font-weight: 700;
+        padding: 10px 10px;
+        font-size:14px;
+    }
+    
+    .aside .nav li a {
+        font-size: 1rem;
+        font-weight: 100;
+        border-bottom: 2px solid var(--bg-black-50);
+    
+    }
+    .nav{
+        top: 10rem;
+        line-height: 2px;    
+    }
+    .show_aside{
+        transform: translateX(0px) !important;
+    }
+    .slider{
+        position: absolute !important;
+        left: 200px !important;
+    }
+    .not-slider{
+        position: absolute !important;
+        left: 0px !important;
+    }
+       
+}
+
+@media (max-width:395px){
+    .home-info p{
+        width: 100%;
+    }
+    .about-me{
+        width: 360px;
+    }
+    .info-item{
+        width: 120%;
+    }
+    .bg{
+        width: 120%;
+    }
+    .timeline{
+        width: 100%;
+    }
+    .section-title h1::before{
+        top: 37.8rem;
+        height: 4px;
+        width: 50px;
+    
+    }
+    
+    .section-title h1::after{
+        height: 4px;
+        top: 37.3rem;
+        width: 90px;
+        
+    }
+}
+@media (max-width:361px){
+    .home-info p{
+        width: 90%;
+    }
+    .about-me{
+        width: 330px;
+    }
+    .info-item{
+        width: 110%;
+    }
+    .bg{
+        width: 110%;
+    }
+    .timeline{
+        width: 90%;
+    }
+    .circle-dot-1{
+        left: 12px;
+        top: 30px;
+        width: 20px;
+        height: 20px;        
+    }
+    .circle-dot-2{
+        left: 12px;
+        top: 16.4rem;
+        width: 20px;
+        height: 20px; 
+    }
+    .circle-dot-3{
+        left: 12px;
+        top: 31rem;
+        width: 20px;
+        height: 20px;        
+    }
 }
