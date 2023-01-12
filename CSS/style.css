@@ -906,7 +906,7 @@ h3.my-profession{
         font-size: 1.5rem;
     }
     .naam{
-        font-size: 2rem;
+        font-size: 1.5rem;
         max-width: 360px;
 
     }
@@ -971,6 +971,10 @@ h3.my-profession{
         text-align: center;
         display: none;
     }
+    .skills{
+    line-height: 3rem;
+}
+    
     #download{
         margin: 10px 10px 0 0px;
     }
