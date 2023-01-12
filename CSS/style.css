@@ -902,7 +902,7 @@ h3.my-profession{
         font-size: 1.8rem;
     }
     .home-info h3{
-        max-width: 360px;
+        max-width: 390px;
         font-size: 2rem;
     }
     .naam{
@@ -916,17 +916,19 @@ h3.my-profession{
         margin-right: 0px;
     }
     .my-profession{
-        width: 400px;
+        width: 410px;
     }
     
     .home-info p{
         font-size: 1rem;
-        width: 110%;
+        width: 100%;
         flex-wrap: wrap;
     }
     .btn{
         padding: 5px 20px;
         font-size: 10px;
+        width: 27%;
+        font-size: 1rem; 
     }
     .about-head{
         margin-top: 3rem;
@@ -978,10 +980,7 @@ h3.my-profession{
         padding-top: 5px;
         width: 120%;
     }
-    .btn{
-        width: 100px;
-        font-size: 1rem; 
-    }
+   
     .download-resume{
         margin-top: 4rem;
         width: 300px;
