@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="canonical" href = "https://dipeshshrestha123.github.io/Portfolio/index.html" />
     <title>Dipesh Shrestha</title>
+    
 
  <!-- --- CSS FILE--- -->
 
@@ -28,7 +28,7 @@
     </div>
     
     <ul class="nav">
-        <li><a href="index.html" ><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
         <li><a href="About.html"><i class="fa fa-user"></i>About</a></li>
         <li><a href="Service.html"><i class="fa fa-list"></i>Services</a></li>
         <li><a href="Portfolio.html"><i class="fa fa-briefcase"></i>portfolio</a></li>
@@ -40,7 +40,6 @@
  
     <!-- ---ASIDE END--- -->
    
-
 
    
     
@@ -61,7 +60,8 @@
                     <div class="home-container">
                         
                     <div class="home-info padd-15">
-                        <h3 class="hello">Hello , My name is <span class="naam">Dipesh Shrestha</span></h3>
+                        <h3 class="hello">Hello , My name is </h3>
+                        <span class="naam">Dipesh Shrestha</span>
                         <!-- <h3 class="naam">Shrestha</h3> -->
                         <h3 class="my-profession"> I'm a <span class="typing"></span></h3>
 
@@ -85,7 +85,7 @@
                 <script>
                     let navtoggle = document.querySelector(".nav-toogler")
                     let sidebar = document.querySelector(".aside")
-                    let slide = document.querySelector(".container")
+                    let slide = document.querySelector(".fa-bars")
                 
                     navtoggle.addEventListener("click",function(){
                         if(navtoggle.firstElementChild.classList.contains("fa-bars"))
@@ -120,18 +120,18 @@
 
 
                 <!-- Active Page JS start -->
-                <script>
-                    const homePage = document.querySelector('ul a');
+                <script>  
                     const activePage = window.location.pathname;
+                    const homePage = document.querySelector('ul a')
                     const navLinks = document.querySelectorAll('ul a').forEach(link =>{
-                        if(link.href.includes(`${activePage}`) && activePage != `/Portfolio/`){
+                        if(link.href.includes(`${activePage}`) && activePage != `/HTML/`){
                             link.classList.add('active');
                         }
-                        if(activePage == `/Portfolio/`){
+                        if(activePage == `/HTML/`){
                             homePage.classList.add('active');
                         }
                     })
-
+                    
                 </script>
                 <!-- Active Page JS End -->
 
@@ -146,7 +146,7 @@
                     </h1></div>
                    
                       
-                        <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, mollitia dolore sequi maiores rem ducimus optio, doloremque assumenda asperiores culpa id fugiat temporibus quibusdam laborum exercitationem suscipit. Est, vitae? Fuga quas illo deserunt! Rem eaque hic corporis necessitatibus accusantium, deserunt nam neque, ab eligendi sequi a reiciendis, excepturi tempora? Debitis!</p>
+                        <p class="about-me"> Currently I am pursuing Btech(CSE) from Galgotias University. I love to do programming and App devlopment. I am always curious to know  how games make what is a process to make it simillar wirth apps,how people make there own website. So I am further trying to be a App devloper or Webdevloper,so i get to know how it really works in deep detail...| </p>
 
                         <div class="personal-container">
                         
@@ -278,7 +278,7 @@
                             <h3 class="timeline-date">
                             <i class="fa fa-calendar"></i> 2019-2020
                             </h3><h4 class="timeline-title">10th (CBSE)</h4>
-                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque pariatur iure! Ipsa, nesciunt non itaque magnam laborum iusto placeat in blanditiis enim, repellendus at!</p>
+                            <p class="timeline-text">Shaheed Hemu Kalani Sarvodaya Bal Vidyalaya, Lajpat nagar</p>
                        
 
                     
@@ -286,7 +286,7 @@
                                 <h3 class="timeline-date">
                                 <i class="fa fa-calendar"></i> 2020-2021
                                 </h3><h4 class="timeline-title">12th (CBSE)</h4>
-                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque pariatur iure! Ipsa, nesciunt non itaque magnam laborum iusto placeat in blanditiis enim, repellendus at!</p>
+                                <p class="timeline-text">Shaheed Hemu Kalani Sarvodaya Bal Vidyalaya, Lajpat nagar</p>
                             
 
                            
@@ -294,7 +294,7 @@
                                     <h3 class="timeline-date">
                                     <i class="fa fa-calendar"></i> 2021-2025
                                     </h3><h4 class="timeline-title">B.tech CSE with Specilization in AIML</h4>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque pariatur iure! Ipsa, nesciunt non itaque magnam laborum iusto placeat in blanditiis enim, repellendus at!</p>
+                                    <p class="timeline-text">Galgotia's University, Greater Noida</p>
                                 
 
                                <div class="education-4 hidden">
@@ -302,7 +302,7 @@
                                         <h3 class="timeline-date">
                                         <i class="fa fa-calendar"></i> 2013-2015
                                         </h3><h4 class="timeline-title">Master in Computer Science</h4>
-                                        <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque pariatur iure! Ipsa, nesciunt non itaque magnam laborum iusto placeat in blanditiis enim, repellendus at!</p>
+                                        <p class="timeline-text">Lorem ipsum dolor sit </p>
                                     </div>
 
                     
@@ -351,7 +351,7 @@
                             <h3 class="timeline-date">
                             <i class="fa fa-calendar"></i> October 1-2, 2022
                             </h3><h4 class="timeline-title">Nasa Space App</h4>
-                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque pariatur iure! Ipsa, nesciunt non itaque magnam laborum iusto placeat in blanditiis enim, repellendus at!</p>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates </p>
                        
 
                         
@@ -359,7 +359,7 @@
                                 <h3 class="timeline-date">
                                 <i class="fa fa-calendar"></i> December 17-28, 2022
                                 </h3><h4 class="timeline-title">Hero Campus Challenge Season 8</h4>
-                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque pariatur iure! Ipsa, nesciunt non itaque magnam laborum iusto placeat in blanditiis enim, repellendus at!</p>
+                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates</p>
                             
 
                            
@@ -367,7 +367,7 @@
                                     <h3 class="timeline-date">
                                     <i class="fa fa-calendar"></i> MM/DD/YYYY
                                     </h3><h4 class="timeline-title">Nothing</h4>
-                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates itaque pariatur iure! Ipsa, nesciunt non itaque magnam laborum iusto placeat in blanditiis enim, repellendus at!</p>
+                                    <p class="timeline-text">Lorem ipsum dolor sit amet </p>
                                 
 
                              <div class="exp-4 hidden">
