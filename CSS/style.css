@@ -967,9 +967,8 @@ h3.my-profession{
         width:120%;
     }
     .bar{
+        left: 20rem;
         font-size:1rem;
-        text-align: center;
-        display: none;
     }
     .skills{
     line-height: 3rem;
@@ -1053,14 +1052,14 @@ h3.my-profession{
     }
     
     .aside .nav li a {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 100;
         border-bottom: 2px solid var(--bg-black-50);
     
     }
     .nav{
-        top: 10rem;
-        line-height: 2px;    
+        top: 14em;
+        line-height: 2rem;    
     }
     .show_aside{
         transform: translateX(0px) !important;
