@@ -1,513 +1,256 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
-:root{
-    --bg-black-900:#f2f2fc;
-    --bg-black-100:#fdf9ff;
-    --bg-black-50:#e8dfec;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
-    --skin-color:#ec1839;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
 
-}
-body{
-    line-height: 1.5;
-    font-family:'Poppins' sans-serif;
-    background:#000000e3
+ <!-- --- CSS FILE--- -->
 
-}
-*
-{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-::after,::before{
-    box-sizing: border-box;
-}
-ul{
-    list-style: none;
-}
-.pad-15{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.container{
-    max-width: 1024px;
-    position: absolute;
-    margin-left:300px;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right:4rem;
-    position: relative;
-}
+    <link rel="stylesheet" href="./CSS/service.css">
+    <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 
-.section{
-    padding: 0px;
-    right: 0;
-    z-index: 0;
-    opacity: 1;
-}
+    <!-- --- CSS FILE END --- -->
 
 
 
-/* Aside css start */
-
-.pad-15{
-    padding-left: 15px;
-    padding-right: 15px;
-}
+ </head>
+ <body>
+    <!-- --- MAIN CONTAINER START --- -->
+    <div class="main-container">
 
 
-.aside{
-    width: 270px;
-    background: var(--bg-black-900);
-    position: fixed;
-    display: flex;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    height: 100%;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-}
-.nav{
-    position: fixed;
-    top: 14.4rem;
-}
-.aside .logo{
-    position: absolute;
-    top: 30px;
-    font-size: 35.8px;
-    text-transform: capitalize;
-}
-.aside .logo a{
-    color: var(--text-black-900);
-    font-weight: 700;
-    padding: 12px 13px;
-    font-size: 22px;
-    letter-spacing: 5px;
-    font-style:italic;
-    position: relative;
-}
-.aside .logo a span{
-    font-family: 'Clicker Script',cursive;
-
-}
-.aside .logo a::before{
-    content: '';
-    position:absolute;
-    width: 20px;
-    min-height: 20px;
-    border-top: 4px solid var(--skin-color);
-    border-left: 4px solid var(--skin-color);
-    top: 0;
-    left: 0;
-
-}
-.aside .logo a::after{
-    content: '';
-    position:absolute;
-    width: 20px;
-    min-height: 20px;
-    border-bottom: 4px solid var(--skin-color);
-    border-right: 4px solid var(--skin-color);
-    bottom: 1px;
-    right:-0.1rem;
-}
-.nav-toogler {
-    cursor: pointer;
-    font-size: 3rem;
-    color: var(--skin-color);
-    position:static;
-    top: 25px;
-    align-items: center;
-    justify-content: center;
-    padding: 3px 15px;
-    z-index: 1;
-}
-.show_aside{
-    transform: translateX(0px) !important;
-}
-.slider{
-    position: absolute !important;
-    left: 270px !important;
-}
-.not-slider{
-    position: absolute !important;
-    left: 0px !important;
-}
-
-.aside .nav li{
-    margin-bottom: 30px;
-}
-.aside .nav li a {
-    font-size: 30px;
-    font-weight: 400;
-    border-bottom: 1px solid var(--bg-black-50);
-    color: var(--text-black-900);
-    padding: 10px 15px;
-    line-height: 55px;
-
-}
-.aside .nav li a.active{
-    color: var(--skin-color);
-}
-.aside .nav li a i{
-    margin-right: 10px;
-}
-
-
-
-
-/* Service Css Start */
-
-
-.service-title{
-    margin-top:4rem;
-    color: var(--bg-black-100);
-    margin-bottom: 5rem;
-}
-.service-title::after{
-    content: '';
-    height: 4px;
-    width: 80px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top:110px;
-    left: 0;
-}
-.service-title::before{
-    content: '';
-    height: 4px;
-    width: 60px;
-    background-color: var(--skin-color);
-    position: absolute;
-    top:118px;
-    left: 0;
-}
-.service-item-container{
-    min-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-}
-
-.service-item{
-    flex: 0 0 30%;
-    margin-bottom: 30px;
-}
-.service-item-inner{
-    background-color: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    border-radius: 10px;
-    padding: 30px 15px;
-    text-align: center;
-    transition: all 0.3s ease;
+        <!-- ---ASIDE START--- -->
     
-}
-.service-item-inner:hover{
-    box-shadow: 0 0 20px rgba(233, 233, 234, 0.55);
-}
-
-.icon{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 30px;
-    transition: all 0.3s ease;
-}
-.icon .fa{
-    color: var(--skin-color);
-    font-size: 40px;
-    line-height: 60px;
-    transition: all 0.3s ease;
-}
-.service-item-inner:hover .icon{
-    background: var(--skin-color);
-}
-.service-item-inner:hover .icon .fa{
-    font-size: 25px;
-    color: #ffffff;
-}
-
-.service-item-inner h4{
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-.service-item-inner p{
-    font-size: 16px;
-    color: var(--text-black-700);
-    line-height: 25px;
-}
-
-
-
-
-
-
-
-/* Responsive Start */
-
-@media (min-width:930px)
-{
-    .nav-toogler{
-        display: none;
-    }
-}
-
-@media (max-width:930px)
-{
-.aside{
-    transform: translateX(-300px);  
-}
-.container{
-     margin-left:30px;
-     top: 1.3rem;
-}
-.service-title{
-    margin-top: 3rem;
-    font-size: 2.5rem;
-}
-.service-title::after{
-    top:9rem;
-    height: 6px;
-    width: 150px;
-}
-.service-title::before{
-    top:9.8rem;
-    height: 6px;
-    width: 100px;
-}
-.service-item-inner h4{
-    font-size: 2rem;
-}
-.service-item-inner p{
-    font-size: 1.5rem;
-    line-height: 40px;
-}
-}
-
-@media (max-width:700px){
-.service-title{
-    font-size: 2rem;
-}
-.service-title::after{
-    top:7.9rem;
-    width: 130px;
-}
-.service-title::before{
-    top:8.5rem;
-    width: 90px;
-}
-.service-item-inner p{
-    font-size: 1.9rem;
-    line-height: 40px;
-}
-
-.service-item{
-    flex: 0 0 47%;
-}
-.service-item-inner:hover .icon .fa{
-    font-size: 3rem;
-}
-.service-item-inner h4{
-    font-size: 3rem;
-}
-.icon .fa{
-    font-size: 4rem;
-    line-height: 100px;
-}
-.icon{
-    height: 100px;
-    width: 100px;
-}
-.aside .logo a{
-    font-weight: 700;
-    padding: 12px 13px;
-    font-size: 22px;
-}
-
-.aside .nav li a {
-    font-size: 2rem;
-    font-weight: 400;
-    border-bottom: 2px solid var(--bg-black-50);
-
-}
-.nav{
-    top: 20rem;
-    line-height: 70px;
-
-}
-}
-
-@media (max-width:500px){
-    .service-title{
-        font-size: 3rem;
-    }
-    .service-item-inner p{
-        font-size: 2.5rem;
-        line-height: 50px;
-    }
-    .service-title::after{
-        top:10rem;
-        width: 200px;
-        height: 7px;
-    }
-    .service-title::before{
-        top:10.8rem;
-        width: 140px;
-        height: 7px;
-
-    }
-    .service-item-container{
-        justify-content: center;
-    }
-    .service-item{
-        flex: 0 0 90%;
-        margin-bottom: 0;
-    }
-    .service-item-inner:hover .icon .fa{
-        font-size: 3.5rem;
-    
-    }
-    .service-item-inner h4{
-        font-size: 4rem;
-    }
-    .icon .fa{
-        margin-top: 2rem;
-        font-size: 5rem;
-        line-height: 35px;
-
-    }
-    .icon{
-        height: 100px;
-        width: 100px;
-    }
-    .aside .logo a{
-        font-weight: 700;
-        padding: 15px 30px;
-        font-size: 3rem;
-    }
-    
-    .aside .nav li a {
-        font-size: 3.5rem;
-        font-weight: 100;
-        border-bottom: 2px solid var(--bg-black-50);
-    
-    }
-    .nav{
-        top: 30rem;
-        line-height: 150px;    
-    }
-    .aside{
-        width: 500px;
-        z-index: 1;
-        transform: translateX(-502px);
-    
-    }
-    .slider{
-        position: absolute !important;
-        left: 500px !important;
-    }
-    .nav-toogler {
-        font-size: 4rem;
-    }
+     <div class="aside">
+        <div class="logo">
+            <a href="index.html">Dipesh Shrestha</a>
+        </div>
         
-}
-@media (max-width:450px){
+        <ul class="nav">
+            <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="About.html"><i class="fa fa-user"></i>About</a></li>
+            <li><a href="Service.html"><i class="fa fa-list"></i>Services</a></li>
+            <li><a href="Portfolio.html"><i class="fa fa-briefcase"></i>portfolio</a></li>
+            <li><a href="contact.html"><i class="fa fa-comments"></i>Contact</a></li>
     
-    .row{
-        margin-right: 0;
-    }
-    .container{
-        margin-left: 10px;
-    }
-    .service-item-container{
-        min-width: 300px;
-    }
-    .nav-toogler {
-        font-size: 2rem;
-        position:relative;
-        top: 1.4rem;
-        left: 17px;
-    }
-    .service-title{
-        font-size: 1.2rem;
-        margin-left: 20px;
-    }
-    .service-title::after{
-        top: 6rem;
-        width: 100px;
-        height: 4px;
-        left: 20px;
-    }
-    .service-title::before{
-        top: 6.5rem;
-        left: 20px;
-        width: 60px;
-        height: 4px;
-    }
-    .icon .fa{
-        margin-top: 1rem;
-        font-size: 2.5rem;
-        line-height: 20px;
+        </ul>
+        
+    
+    </div>
+    <!-- Aside End -->
+    
+    
+    
+    
+    <!-- Home section start -->
+    
+    <div class="home section">
+    
+    <!-- Container Start -->
+    
+    
+    <div class="container">
+    
+        <span class="nav-toogler">
+            <span class="fa fa-bars"></span>
+        </span>
+    
+    
+    
+        <!-- Row Start -->
+    
+        <div class="row">
+
+           
+
+
+            
+   
+        
+        <div class="service-title">
+            <h1>Services</h1>
+        </div>
+
+        <div class="service-item-container">
+
+     <div class="service-item">
+       <div class="service-item-inner">
+        <div class="icon">
+            <i class=" fa fa-mobile-alt"></i>
+        </div>
+        <h4>Android Devlopment</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem libero, consequatur error cum ipsam optio necessitatibus suscipit eveniet. Ut mole</p>
+       </div>
+      </div>
+    
+
+
+
+
+
+      <div class="service-item">
+        <div class="service-item-inner">
+         <div class="icon">
+             <i class=" fa fa-laptop-code"></i>
+         </div>
+         <h4>Web Devlopment</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem libero, consequatur error cum ipsam optio necessitatibus suscipit eveniet. Ut moles</p>
+        </div>
+       </div>
+
+
+
+
+
+
+       
+      <div class="service-item">
+        <div class="service-item-inner">
+         <div class="icon">
+             <i class=" fa fa-palette"></i>
+         </div>
+         <h4>Web Design</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem libero, consequatur error cum ipsam optio necessitatibus suscipit eveniet. Ut moles</p>
+        </div>
+       </div>
+
+
+
+
+
+
+
+       
+      <div class="service-item">
+        <div class="service-item-inner">
+         <div class="icon">
+             <i class=" fa fa-code"></i>
+         </div>
+         <h4>Web Design</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem libero, consequatur error cum ipsam optio necessitatibus suscipit eveniet. Ut moles</p>
+        </div>
+       </div>
+
+
+
+
+       
+      <div class="service-item">
+        <div class="service-item-inner">
+         <div class="icon">
+             <i class=" fa fa-search"></i>
+         </div>
+         <h4>Web Design</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem libero, consequatur error cum ipsam optio necessitatibus suscipit eveniet. Ut moles</p>
+        </div>
+       </div>
+
+
+
+
+       
+      <div class="service-item">
+        <div class="service-item-inner">
+         <div class="icon">
+             <i class=" fa fa-bullhorn"></i>
+         </div>
+         <h4>Web Design</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem libero, consequatur error cum ipsam optio necessitatibus suscipit eveniet. Ut moles</p>
+        </div>
+       </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- Toogle bar JS Start -->
+    <script>
+        let navtoggle = document.querySelector(".nav-toogler")
+        let sidebar = document.querySelector(".aside")
+        let slide = document.querySelector(".fa-bars")
+    
+        navtoggle.addEventListener("click",function(){
+            if(navtoggle.firstElementChild.classList.contains("fa-bars"))
+    {
+                navtoggle.firstElementChild.classList.replace("fa-bars","fa-times")
+                slide.classList.toggle("slider")
+                slide.classList.replace("not-slider","slider")
 
     }
-    .service-item-inner h4{
-        font-size:1.5rem;
-    }
-    .service-item-inner:hover .icon .fa{
-        font-size: 1.5rem;
-    
-    }
-    .icon{
-        height:50px;
-        width: 50px;
-    }
-    .service-item-inner p{
-        font-size: 1rem;
-        line-height: 20px;
-    } 
-    .aside{
-        z-index: 1;
-        width: 250px;
-        transform: translateX(-272px);
-    }
-    .aside .logo a{
-        font-weight: 700;
-        padding: 10px 10px;
-        font-size:14px;
+    else{
+        navtoggle.firstElementChild.classList.replace("fa-times","fa-bars")
+        slide.classList.replace("slider","not-slider")
     }
     
-    .aside .nav li a {
-        font-size: 1.5rem;
-        font-weight: 100;
-        border-bottom: 2px solid var(--bg-black-50);
+       sidebar.classList.toggle("show_aside");
+        })
+        window.addEventListener("scroll",()=>{
+            sidebar.classList.remove("show_aside");
+            slide.classList.replace("slider","not-slider")
+            navtoggle.firstElementChild.classList.replace("fa-times","fa-bars")
+        
+        })
     
-    }
-    .nav{
-        top: 14em;
-        line-height: 2rem;    
-    }
-    .show_aside{
-        transform: translateX(0px) !important;
-    }
-    .slider{
-        position: absolute !important;
-        left: 250px !important;
-    }
-    .not-slider{
-        position: absolute !important;
-        left: 0px !important;
-    }
-    
-   
-}
+       </script>
+    <!-- Toogle bar JS End -->
+
+<!-- Active Page JS start -->
+<script>
+
+    const activePage = window.location.pathname;
+    const navLinks = document.querySelectorAll('ul a').forEach(link =>{
+        if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+        }
+    })
+
+</script>
+<!-- Active Page JS End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>
