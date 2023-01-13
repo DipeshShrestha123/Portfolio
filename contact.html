@@ -26,7 +26,7 @@
     
      <div class="aside">
         <div class="logo">
-            <a href="index.html"><span>D</span>ipesh Shrestha</a>
+            <a href="index.html">Dipesh Shrestha</a>
         </div>
         <ul class="nav">
             <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
@@ -221,7 +221,7 @@ messageInput.value = '';
      <script>
         let navtoggle = document.querySelector(".nav-toogler")
         let sidebar = document.querySelector(".aside")
-        let slide = document.querySelector(".container")
+        let slide = document.querySelector(".fa-bars")
     
         navtoggle.addEventListener("click",function(){
             if(navtoggle.firstElementChild.classList.contains("fa-bars"))
@@ -244,11 +244,7 @@ messageInput.value = '';
             slide.classList.replace("slider","not-slider")
             navtoggle.firstElementChild.classList.replace("fa-times","fa-bars")
         })
-        slide.addEventListener("touchstart",()=>{
-            sidebar.classList.remove("show_aside");
-            slide.classList.replace("slider","not-slider")
-            navtoggle.firstElementChild.classList.replace("fa-times","fa-bars")
-        })
+       
     
        </script>
     <!-- Toogle bar JS End -->
