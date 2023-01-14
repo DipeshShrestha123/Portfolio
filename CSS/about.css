@@ -262,6 +262,9 @@ ul{
 .download-resume{
     margin-top: 30px;
 }
+.Website{
+    color: var(--bg-black-100);
+}
 #download{
     margin: 10px 10px 0 40px;
 }
