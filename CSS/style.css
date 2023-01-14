@@ -316,7 +316,9 @@ h3.my-profession{
     padding-bottom: 10px;
     padding-top: 10px;
 }
-
+.Website{
+    color: var(--bg-black-100);
+}
 .download-resume{
     
     margin-top: 30px;
