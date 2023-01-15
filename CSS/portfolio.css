@@ -212,6 +212,18 @@ ul{
 .portfolio-img img{
     width: 100%;
 }
+.project-detail{
+    text-align: center;
+}
+.project-detail h3{
+    color: var(--bg-black-100);
+}
+.project-detail h2 a{
+    color: #007bff;
+}
+.project-detail p{
+    color: grey;
+}
 
 
 
