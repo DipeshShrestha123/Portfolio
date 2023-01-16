@@ -74,6 +74,7 @@ ul{
     display: flex;
     left: 0;
     top: 0;
+    transition: 0.7s ease;
     padding: 10px;
     height: 100%;
     justify-content: center;
