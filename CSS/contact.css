@@ -70,6 +70,7 @@ ul{
     padding: 10px;
     height: 100%;
     justify-content: center;
+    transition: 0.7s ease;
     align-items: center;
 }
 .nav{
