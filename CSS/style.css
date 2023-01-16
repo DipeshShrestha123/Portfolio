@@ -937,7 +937,7 @@ h3.my-profession{
         font-size:1.5rem;
     }
     .section-title h1::before{
-        top: 35.4rem;
+        top: 34rem;
         height: 4px;
         width: 50px;
     
@@ -945,7 +945,7 @@ h3.my-profession{
     
     .section-title h1::after{
         height: 4px;
-        top: 34.9rem;
+        top: 33.5rem;
         width: 90px;
         
     }
@@ -960,7 +960,6 @@ h3.my-profession{
         width: 105%;
         font-size: 1rem;
         font-weight: 100;
-        /* width: 120%; */
     }
     .lang{
         font-size:1rem; 
@@ -971,12 +970,11 @@ h3.my-profession{
     .bar{
         left: 20rem;
         font-size:1rem;
-        right:0;
+        right: 0;
     }
     .skills{
-    line-height: 3rem;
-}
-    
+        line-height: 3rem;
+    }
     #download{
         margin: 10px 10px 0 0px;
     }
@@ -1025,13 +1023,13 @@ h3.my-profession{
     }
     .circle-dot-2{
         left: 17px;
-        top: 10.7rem;
+        top: 10.5rem;
         width: 10px;
         height: 10px; 
     }
     .circle-dot-3{
         left: 17px;
-        top: 19.2rem;
+        top: 18.9rem;
         width: 10px;
         height: 10px;        
     }
@@ -1095,7 +1093,7 @@ h3.my-profession{
         width: 100%;
     }
     .section-title h1::before{
-        top: 37.8rem;
+        top: 34rem;
         height: 4px;
         width: 50px;
     
@@ -1103,7 +1101,7 @@ h3.my-profession{
     
     .section-title h1::after{
         height: 4px;
-        top: 37.3rem;
+        top: 33.5rem;
         width: 90px;
         
     }
@@ -1125,21 +1123,37 @@ h3.my-profession{
         width: 90%;
     }
     .circle-dot-1{
-        left: 12px;
+        left: 14px;
         top: 30px;
-        width: 20px;
-        height: 20px;        
+        width: 15px;
+        height: 15px;        
     }
     .circle-dot-2{
-        left: 12px;
-        top: 16.4rem;
-        width: 20px;
-        height: 20px; 
+        left: 14px;
+        top: 10.4rem;
+        width: 15px;
+        height: 15px; 
     }
     .circle-dot-3{
-        left: 12px;
-        top: 31rem;
-        width: 20px;
-        height: 20px;        
+        left: 14px;
+        top: 18.8rem;
+        width: 15px;
+        height: 15px;        
     }
+    .section-title h1::before{
+        top: 35.5rem;
+        height: 4px;
+        width: 50px;
+    
+    }
+    
+    .section-title h1::after{
+        height: 4px;
+        top: 35rem;
+        width: 90px;
+    }
+    .bar{
+        left: 17.9rem;
+    }
+       
 }
